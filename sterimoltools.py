@@ -423,6 +423,7 @@ class calcSterimol:
       if radii == "cpk":
          atomic_co_no = ncoord(natoms, rcov, atomtype, molcart)
          sterimol_types = generate_atom_types(atomtype, atomic_co_no)
+         print(sterimol_types)
          #print sterimol_types
          for i in range(0,natoms):
             for j in range(0,len(sterimol_atomtypes)):
